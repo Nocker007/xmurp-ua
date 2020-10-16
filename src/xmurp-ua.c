@@ -33,7 +33,7 @@ enum skb_scan_ret
 // 输入零指针则为重置状态。
 inline u_int8_t char_scan(char *data)
 {
-	const char str_ua_head[] = "User-Agent: ", str_ua[] = "XMURP/1.0", str_end[] = "\r\n\r\n";
+	const char str_ua_head[] = "User-Agent: ", str_ua[] = "CDMA+WLAN(Mios)", str_end[] = "\r\n\r\n";
 	// 不算'\0'，长度分别为12、9、4
 	static enum
 	{
