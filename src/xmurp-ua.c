@@ -31,9 +31,10 @@ enum skb_scan_ret
 
 // 根据得到的指针尝试扫描，发现结尾或发现UA或更改UA后返回对应结果。
 // 输入零指针则为重置状态。
+// UA:  CDMA+WLAN(Mios)
 inline u_int8_t char_scan(char *data)
 {
-	const char str_ua_head[] = "User-Agent: ", str_ua[] = "CDMA+WLAN(Mios)", str_end[] = "\r\n\r\n";
+	const char str_ua_head[] = "User-Agent: ", str_ua[] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36", str_end[] = "\r\n\r\n";
 	// 不算'\0'，长度分别为12、9、4
 	static enum
 	{
