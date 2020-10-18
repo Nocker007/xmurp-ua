@@ -34,7 +34,7 @@ enum skb_scan_ret
 // UA:  CDMA+WLAN(Mios)
 inline u_int8_t char_scan(char *data)
 {
-	const char str_ua_head[] = "User-Agent: ", str_ua[] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36", str_end[] = "\r\n\r\n";
+	const char str_ua_head[] = "User-Agent: ", str_ua[] = "Opera/9.8", str_end[] = "\r\n\r\n";
 	// 不算'\0'，长度分别为12、9、4
 	static enum
 	{
