@@ -30,7 +30,7 @@ static int __init hook_init(void)
 
 	rkpm = rkpManager_new();
 
-	sprintf(str_uaRkp, "RKP/%d.0", VERSION);
+	sprintf(str_uaRkp, "Mozilla/%d.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko", VERSION);
 
 	nfho[0].hooknum = NF_INET_LOCAL_IN;
 	nfho[1].hooknum = NF_INET_LOCAL_OUT;
